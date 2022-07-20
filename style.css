@@ -1,0 +1,466 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ------------------
+    Navbar Styles
+-------------------- */
+.navbar {
+    padding: 0 !important;
+}
+
+.navbar-toggler {
+    background-color: white !important;
+    color: white;
+}
+
+.container-nav {
+    background: #2D25A0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-item {
+    padding: 5px;
+}
+
+.nav-item a {
+    color: white;
+    font-size: 18px;
+}
+
+.nav-item a:hover {
+    color: #E02C6D;
+    font-size: 18px;
+}
+
+/* .navbar {
+    background: #2D25A0;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+} */
+
+.menu {
+    display: flex;
+
+}
+
+.menu li {
+    list-style: none;
+    padding-right: 36px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.btn-login {
+    background-color: #E02C6D;
+    padding: 10px 24px;
+}
+
+.btn-login:hover {
+    border-radius: 50px;
+    transition: 0.3s ease-in;
+}
+
+.btn-login a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+/* ------------------
+    Banner Styles
+-------------------- */
+.banner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 580px;
+    background-color: #2D25A0;
+}
+
+.container-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.info-banner .title {
+    margin: 0;
+    font-size: 64px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+
+.image-banner {
+    /* border: 1px solid red; */
+    margin-left: 30px;
+    width: 50%;
+    padding: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+/* .image-banner:hover .football {
+    transform: rotate(-30deg);
+} */
+
+.image-player {
+    position: absolute;
+    top: 80px;
+    right: 40px;
+}
+
+.football {
+    width: 100%;
+    /* transition: transform 0.5s ease; */
+    /* width: 556px;
+    height: 438px; */
+}
+
+.background {
+    width: 388px;
+    height: 428px;
+}
+
+.btn-watch {
+    display: inline-block;
+    margin: 30px 0;
+}
+
+
+/* --------------------
+    Rotate Animation
+----------------------- */
+
+@keyframes rotating {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(-30deg);
+    }
+}
+
+.football {
+    animation: rotating 5s ease-in-out infinite;
+}
+
+/* ----------------------------
+    Players Section Styles
+-------------------------------*/
+.section-players {
+    display: flex;
+    justify-content: center;
+}
+
+.container-players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 70px 0;
+}
+
+.player {
+    width: 300px;
+    height: 474px;
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.player-image img {
+    /* width: 300px;
+    height: 256px; */
+    width: 100%;
+}
+
+.player-details .description {
+    font-size: 16px;
+    color: #6C6C6C;
+}
+
+/*----------------------------
+     Poster Section Styles
+------------------------------ */
+.poster {
+    width: 100%;
+    padding: 70px 0;
+    margin: 0 auto;
+}
+
+.container-poster {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.poster-details {
+    width: 50%;
+}
+
+.poster-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.poster-image img {
+    width: 567px;
+    height: 427px;
+}
+
+.poster-description {
+    font-size: 16px;
+    color: #6C6C6C;
+}
+
+/*----------------------------
+     News Letter Styles
+------------------------------ */
+.news-letter {
+    display: grid;
+    justify-items: center;
+}
+
+.container-news-letter {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    width: 95%;
+    margin: 20px;
+}
+
+.download {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.details-download h2 {
+    /* color: white; */
+    font-size: 3em;
+    margin: 0;
+    font-weight: 700;
+}
+
+.details-download h3 {
+    color: red;
+    font-size: 2em;
+    margin: 0;
+    font-weight: 700;
+}
+
+.app-download img {
+    width: 400px;
+    height: 60px;
+    margin-top: 20px;
+}
+
+.app-download img:hover {
+    cursor: pointer;
+}
+
+
+/* EMAIL Section */
+.details-email {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.details-email h4 {
+    color: #6C6C6C;
+}
+
+.details-email h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.field {
+    margin-top: 20px;
+}
+
+.field input {
+    width: 400px;
+    height: 30px;
+    padding: 20px;
+    border: none;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 50px;
+}
+
+/*----------------------------
+     Logo Section Styles
+------------------------------ */
+.container-logo {
+    padding: 80px 0 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container-logo img {
+    width: 485px;
+    height: 110px;
+}
+
+/*----------------------------
+     Footer Section Styles
+------------------------------ */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons .social {
+    color: #6C6C6C;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #6C6C6C;
+    border-radius: 50px;
+    background-color: #ebebeb;
+    border: none;
+}
+
+/*----------------------------
+     Resposive for Tablet
+------------------------------ */
+
+@media only screen and (max-width: 992px) {
+    .navbar {
+        /* padding-bottom: 20px; */
+        /* margin-bottom: 30px; */
+    }
+
+    .banner {
+        /* width: 100%; */
+        height: 900px;
+    }
+
+    .container-banner {
+        flex-direction: column;
+        /* margin-top: 200px; */
+    }
+
+
+    .info-banner {
+        width: 100%;
+    }
+
+    .football {
+        width: 120%;
+    }
+
+    .container-players {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .poster-details {
+        width: 100%;
+    }
+
+    .poster-image {
+        width: 100%;
+    }
+
+    .poster-image img {
+        width: 100%;
+    }
+
+    .container-news-letter {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+/*----------------------------
+     Resposive for Phone
+------------------------------ */
+@media only screen and (max-width: 688px) {
+    .navbar {
+        display: none;
+    }
+
+    .info-banner {
+        padding: 5px;
+    }
+
+    .info-banner .title {
+        font-size: 50px;
+    }
+
+    .image-banner {
+        display: none;
+        margin-left: 30px;
+        width: 388px;
+        height: 428px;
+        padding: 30px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    .background {
+        width: 100%;
+    }
+
+    .football {
+        width: 100%;
+    }
+
+    .container-players,
+    .container-poster {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .poster {
+        padding: 20px;
+    }
+
+    .download {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .email {
+        width: 100%;
+    }
+
+    .details-email {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .container-logo {
+        width: 80%;
+    }
+
+    .container-logo img {
+        width: 80%;
+    }
+}
