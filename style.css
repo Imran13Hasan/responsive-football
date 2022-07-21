@@ -47,7 +47,7 @@ body {
     justify-content: space-around;
 } */
 
-.menu {
+/* .menu {
     display: flex;
 
 }
@@ -61,7 +61,7 @@ body {
     text-decoration: none;
     color: white;
     font-size: 16px;
-}
+} */
 
 .btn-login {
     background-color: #E02C6D;
@@ -91,11 +91,41 @@ body {
 }
 
 .container-banner {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
     align-items: center;
 }
 
+.image-banner {
+    /* width: 50%; */
+}
+
+.image-container {
+    width: 388px;
+    height: 428px;
+    position: relative;
+}
+
+.background {
+    position: absolute;
+}
+
+.football {
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    right: 50;
+}
+
+.football img {
+    width: 100%;
+}
+
+.info-banner {
+    padding: 10px;
+    /* width: 50%; */
+}
 
 .info-banner .title {
     margin: 0;
@@ -104,38 +134,6 @@ body {
     color: #ffffff;
 }
 
-
-.image-banner {
-    /* border: 1px solid red; */
-    margin-left: 30px;
-    width: 50%;
-    padding: 30px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
-
-/* .image-banner:hover .football {
-    transform: rotate(-30deg);
-} */
-
-.image-player {
-    position: absolute;
-    top: 80px;
-    right: 40px;
-}
-
-.football {
-    width: 100%;
-    /* transition: transform 0.5s ease; */
-    /* width: 556px;
-    height: 438px; */
-}
-
-.background {
-    width: 388px;
-    height: 428px;
-}
 
 .btn-watch {
     display: inline-block;
@@ -363,8 +361,10 @@ body {
     }
 
     .container-banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
-        /* margin-top: 200px; */
     }
 
 
@@ -402,14 +402,33 @@ body {
      Resposive for Phone
 ------------------------------ */
 @media only screen and (max-width: 688px) {
+    header {
+        /* display: none; */
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn-watch {
+        display: inline-block;
+    }
 
     .container-banner {
-        height: 800px;
-        margin-top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 300px;
     }
 
     .info-banner {
-        padding: 5px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .info-banner .title {
@@ -417,22 +436,32 @@ body {
     }
 
     .image-banner {
-        display: none;
-        margin-left: 30px;
-        width: 388px;
-        height: 428px;
-        padding: 30px;
+        /* display: none; */
+        width: 100%;
+    }
+
+    .image-container {
+        /* display: none; */
         position: relative;
+        width: 100%;
         display: flex;
         justify-content: center;
+        /* height: 250px; */
     }
 
     .background {
-        width: 100%;
+        position: absolute;
+        width: 70%;
+    }
+
+    .background img {
+        width: 90%;
     }
 
     .football {
-        width: 100%;
+        position: absolute;
+        width: 70%;
+        top: 70px;
     }
 
     .container-players,
@@ -467,23 +496,6 @@ body {
         margin-top: 20px;
     }
 
-    /* .download {
-        width: 90%;
-        padding: 20px;
-    }
-
-    .app-download img {
-        width: 100%;
-    }
-
-    .email {
-        width: 90%;
-    }
-
-    .details-email {
-        width: 100%;
-        padding: 20px;
-    } */
 
     .container-logo {
         margin-top: 20px;
