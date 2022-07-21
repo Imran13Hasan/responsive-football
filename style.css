@@ -470,10 +470,12 @@ body {
     }
 
     .container-news-letter {
+        display: none;
         justify-items: center;
     }
 
     .download {
+        display: none;
         width: 100%;
     }
 
